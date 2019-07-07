@@ -1,0 +1,28 @@
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+       <meta charset="UTF-8"/>
+       <link th:replace="./fragments/bootstrap :: bootstrap"></link>
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    	<link rel="stylesheet" href="/custom.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    	<script src="/custom.js"></script>
+   </head>
+  
+   <body>
+       <div class="container">
+       <div class="jumbotron">
+           <div th:replace="./fragments/navbar :: navbar"></div>
+				
+           <h1>Welcome to BUZZz!</h1>
+           <h3>Connect. Conjour. Create the Buzz!</h3>
+             <p> The BUZZz social media platform is to become one of the most effective ways of connecting with friends and family. It is also a great means of marketing your business and getting your name out there. But, if you aren't creating engaging social media posts that people want to read and share it's essentially useless.</p> 
+             <p>Not only do you have to offer valuable information, but you've got to do it in a way that's going to keep <b>The Buzz!</b> in what you've got to say. Here are some handy tools to help you to attract readers and get your content shared throughout social media land.</p>
+       			<h3>Create an Account for Free!</h3>
+       		 <a class="btn btn-primary btn-lg" th:href="@{/registration}">Register</a>
+           <a class="btn btn-info btn-lg" th:href="@{/login}">Login</a>
+       	</div>	
+       </div>
+   </body>
+</html>
